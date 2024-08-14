@@ -462,7 +462,7 @@ nav {
 .service-card h2 {
   padding-bottom: 10px;
 }
-.services {
+.services-slider {
   width: auto;
   display: grid;
   grid-template-columns: auto auto;
@@ -683,6 +683,10 @@ nav {
     width: 150px;
     justify-content: center;
   }
+}
+
+footer{
+  padding: 400px;
 }
 
 @media only screen and (max-width: 1310px) {
@@ -1027,5 +1031,51 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+}
+
+
+@media only screen and (max-width: 630px) {
+  .about{
+    flex-direction: column;
+  }
+
+  .about-img{
+    display: none;
+  }
+
+  .about-text{
+    width: 85%;
+  }
+
+
+.services-slider-wrapper {
+    display: flex;
+    position: relative;
+    gap: 20px;
+    /* max-width: 48rem; */
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-slider{
+  display: flex;
+  padding-inline: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.services{
+  width: 100%;
+}
+
+.services-section{
+  padding-inline: 20px;
+  width: 100%;
+}
+
+.about-service {
+  padding-inline: 20px;
 }
 }
