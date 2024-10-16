@@ -31,7 +31,7 @@ nav ul li {
   cursor: pointer;
 }
 
-nav ul {
+nav ul div {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -39,6 +39,16 @@ nav ul {
 
 nav {
   margin-left: auto;
+  padding: 20px;
+}
+
+.close-menu{
+  display: none;
+  margin-left: auto;
+}
+
+.mobile-menu{
+  display: none;
 }
 
 .name-icon {
@@ -1108,6 +1118,71 @@ footer{
   transform: scale(1);
 }
 
+.processes {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.offset {
+  position: relative;
+  bottom: 0px;
+}
+
+.process-card {
+  width: 80%;
+  height: auto;
+}
+
+.animate {
+  animation: none;
+}
+
+.mobile-menu{
+  display: block;
+}
+
+.nav{
+  display: none;
+  right: -50px;
+  /* transition: all 1s ease */
+}
+
+/* nav{
+  position: relative;
+} */
+
+body{
+  position: relative;
+}
+
+.mobile-nav {
+  display: block;
+  position: absolute;
+  background-color: beige;
+  /* right: 0; */
+  top: 0;
+  width: 40%;
+
+  padding: 20px;
+}
+
+nav ul div {
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav ul li{
+        margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 }
 
 @media only screen and (max-width: 582px) {
@@ -1127,4 +1202,5 @@ footer{
   padding: 10px;
 
 }
+
 }
