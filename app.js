@@ -28,6 +28,14 @@ closeNav.addEventListener("click", () => {
   mobileMenu.style.display = "block"
   nav.classList.remove("mobile-nav")
 
-  console.log("ligma")
+  // console.log("ligma")
 
 })
+
+document.addEventListener("click", (e) => {
+  if (!nav.contains(e.target) && !closeNav.contains(e.target)&& !mobileMenu.contains(e.target)) {
+    nav.style.display = "none"
+    mobileMenu.style.display = "block"
+    nav.classList.remove("mobile-nav")
+  }
+});
