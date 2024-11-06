@@ -6,10 +6,23 @@
   /* overflow-x: hidden; */
 }
 
-body {
+body, html {
   overflow-x: hidden;
+  /* overflow-y: hidden; */
   position: relative;
 }
+
+.blob-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none; /* Optional: prevents interference with interactions */
+  z-index: -1;
+}
+
 
 header {
   padding-inline: 300px;
@@ -45,6 +58,10 @@ nav {
 .close-menu {
   display: none;
   margin-left: auto;
+}
+
+.close-menu-con{
+  display: none;
 }
 
 .mobile-menu {
@@ -700,7 +717,24 @@ nav {
 }
 
 footer {
-  height: 10000px;
+  background-color: #2B384C;
+  display: flex;
+  padding-inline: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 100px;
+  color: white;
+}
+
+footer ul{
+  display: flex;
+  gap: 20px;
+}
+
+footer ul li{
+  cursor: pointer;
+  color: white;
+  list-style-type: none;
 }
 
 @media only screen and (max-width: 1310px) {
@@ -835,6 +869,14 @@ footer {
   .about {
     width: 85%;
   }
+
+  footer {
+    padding-inline: 50px;
+  }
+
+  .footer-logo h1{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1006px) {
@@ -873,6 +915,17 @@ footer {
   .services-section {
     padding-inline: 60px;
   }
+
+  .footer-logo{
+  padding-left: 0 !important;
+  }
+
+  footer {
+    flex-direction: column;
+    padding-inline: 50px;
+    gap: 15px;
+    align-items: flex-start;
+}
 
   .processes {
     width: 60%;
@@ -1141,6 +1194,10 @@ footer {
     display: block;
   }
 
+  .close-menu{
+    display: block;
+  }
+
   .close-menu-con {
     display: block;
     padding-inline: 20px;
@@ -1211,6 +1268,15 @@ footer {
     color: #556070;
     font-size: 13px;
 }
+
+footer ul {
+  display: flex;
+  gap: 12px;
+}
+
+footer {
+
+  padding-inline: 30px;
 }
 
 @media only screen and (max-width: 489px) {
