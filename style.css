@@ -10,6 +10,7 @@ body, html {
   overflow-x: hidden;
   /* overflow-y: hidden; */
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .blob-container {
@@ -42,6 +43,15 @@ header {
 nav ul li {
   list-style-type: none;
   cursor: pointer;
+}
+
+nav a:link{
+  text-decoration: none;
+  color: black;
+}
+nav a:visited{
+  text-decoration: none;
+  color: black;
 }
 
 nav ul div {
@@ -731,6 +741,19 @@ footer ul{
   gap: 20px;
 }
 
+footer a:link{
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+
+
 footer ul li{
   cursor: pointer;
   color: white;
@@ -1226,8 +1249,7 @@ footer ul li{
     background-color: beige;
     /* right: 0; */
     top: 0;
-    width: 40%;
-
+    width: 60%;
     padding: 20px;
   }
 
