@@ -1232,7 +1232,8 @@ footer ul li{
   .nav {
     display: none;
     right: -50px;
-    /* transition: all 1s ease */
+    transform: translateX(90px);
+    transition: all 1s ease
   }
 
   /* nav{
@@ -1249,6 +1250,7 @@ footer ul li{
     background-color: beige;
     /* right: 0; */
     top: 0;
+    transform: translateX(10px);
     width: 60%;
     padding: 20px;
   }
